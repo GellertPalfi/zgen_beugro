@@ -43,13 +43,13 @@ def clean_data():
     for index in ask_values_raw:
         ask_values_sublist = []
         for i in index:
-            ask_values_sublist.append(i.rstrip("0"))
+            ask_values_sublist.append(i.rstrip(".0"))
         ask_values.append(ask_values_sublist)
 
     for index in bid_values_raw:
         bid_values_sublist = []
         for i in index:
-            bid_values_sublist.append(i.rstrip("0"))
+            bid_values_sublist.append(i.rstrip(".0"))
         bid_values.append(bid_values_sublist)
 
     return ask_values, bid_values
